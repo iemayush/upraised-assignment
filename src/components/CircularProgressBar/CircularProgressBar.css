@@ -1,0 +1,22 @@
+.circular-progress {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  /* check if below properties can be customized */
+  height: 90%;
+  width: 90%;
+  background: #fff;
+}
+
+.value-container {
+  position: relative;
+}
